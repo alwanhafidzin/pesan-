@@ -108,6 +108,7 @@ body{
   padding:0 22px;
 }
 
+/* OPEN LETTER DESKTOP */
 .container.open .letter{
   height:78vh;
   top:-38vh;
@@ -192,14 +193,13 @@ body{
 @media(max-width:480px){
 
   body{
-    padding:15px;
+    padding:12px;
     overflow:hidden;
-    align-items:center;
   }
 
   .container{
     width:100%;
-    max-width:330px;
+    max-width:340px;
     height:220px;
   }
 
@@ -209,23 +209,36 @@ body{
 
   .front h2{
     font-size:20px;
-    bottom:20px;
+    bottom:18px;
     letter-spacing:1px;
   }
 
+  /* FIX MOBILE */
   .container.open .letter{
 
-    width:100%;
+    position:fixed;
 
-    height:78vh;
+    left:50%;
 
-    top:-30vh;
+    width:92vw;
+
+    max-width:360px;
+
+    height:72vh;
+
+    top:50%;
+
+    transform:
+    translateX(-50%)
+    translateY(-52%);
+
+    border-radius:22px;
 
     padding:22px 18px;
 
-    border-radius:18px;
-
     overflow-y:auto;
+
+    z-index:9999;
 
   }
 
@@ -236,11 +249,11 @@ body{
 
   .signature{
     font-size:15px;
-    margin-top:28px;
+    margin-top:24px;
   }
 
   .music-text{
-    bottom:22px;
+    bottom:18px;
     font-size:13px;
     width:100%;
     text-align:center;
