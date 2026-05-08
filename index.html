@@ -193,14 +193,14 @@ body{
 @media(max-width:480px){
 
   body{
-    padding:12px;
+    padding:10px;
     overflow:hidden;
   }
 
   .container{
     width:100%;
-    max-width:340px;
-    height:220px;
+    max-width:320px;
+    height:210px;
   }
 
   .front{
@@ -213,28 +213,27 @@ body{
     letter-spacing:1px;
   }
 
-  /* FIX MOBILE */
+  /* MOBILE LETTER FIX */
   .container.open .letter{
 
     position:fixed;
 
     left:50%;
-
-    width:92vw;
-
-    max-width:360px;
-
-    height:72vh;
-
     top:50%;
 
     transform:
     translateX(-50%)
-    translateY(-52%);
+    translateY(-50%);
 
-    border-radius:22px;
+    width:88vw;
 
-    padding:22px 18px;
+    max-width:320px;
+
+    height:65vh;
+
+    padding:20px 16px;
+
+    border-radius:20px;
 
     overflow-y:auto;
 
@@ -244,17 +243,17 @@ body{
 
   .text{
     font-size:14px;
-    line-height:1.9;
+    line-height:1.8;
   }
 
   .signature{
-    font-size:15px;
+    font-size:14px;
     margin-top:24px;
   }
 
   .music-text{
-    bottom:18px;
-    font-size:13px;
+    bottom:16px;
+    font-size:12px;
     width:100%;
     text-align:center;
     left:0;
@@ -454,10 +453,8 @@ container.addEventListener("click",()=>{
 
   if(!started){
 
-    /* PLAY MUSIC */
     music.play();
 
-    /* START TYPING */
     setTimeout(()=>{
       typeText();
     },1200);
